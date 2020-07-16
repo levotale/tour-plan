@@ -343,13 +343,16 @@ template {
 
 body {
   font-family: 'Muli', sans-serif;
-  font-weight: normal;
   color: #333333;
 }
 
 .container {
   max-width: 1110px;
   margin: auto;
+}
+
+img {
+  width: 100%;
 }
 
 .navbar {
@@ -367,6 +370,31 @@ body {
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
+}
+
+.navbar-bottom {
+  background-color: #0A223D;
+}
+
+.navbar-menu {
+  list-style: none;
+  padding: 31px 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-menu__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 177px;
 }
 
 .search {
@@ -389,6 +417,7 @@ body {
 }
 
 .search__button {
+  padding: 12px 24px;
   position: absolute;
   top: 0;
   right: 0;
@@ -416,5 +445,80 @@ body {
   line-height: 18px;
   color: #333333;
   padding-left: 18px;
+}
+
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 16px;
+  height: 11px;
+  padding: 0;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.menu-button__line {
+  width: 16px;
+  height: 1px;
+  background-color: #333333;
+}
+
+.navbar__menu-button {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .navbar-top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .navbar__search {
+    margin-left: auto;
+  }
+  .navbar-menu {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .logo {
+    width: 132px;
+  }
+  .search__input {
+    width: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
+  .navbar-menu, .navbar__search, .navbar__user {
+    display: none;
+  }
+  .navbar__menu-button {
+    display: flex;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

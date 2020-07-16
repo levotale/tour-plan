@@ -9,7 +9,23 @@
   &__search
     margin-right: auto
     margin-left: 108px
-
+  &-bottom
+    background-color: $dark
+  &-menu
+    list-style: none
+    padding: 31px 0
+    margin: 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__link
+      text-decoration: none
+      color: $light
+      font-size: 14px
+      line-height: 18px
+      text-transform: uppercase
+.logo
+  width: 177px
 .search
   position: relative
   overflow: hidden
@@ -26,6 +42,7 @@
     line-height: 15px
     color: $text-color
   &__button
+    padding: 12px 24px
     position: absolute
     top: 0
     right: 0
@@ -47,3 +64,20 @@
     line-height: 18px
     color: $text-color
     padding-left: 18px
+.menu-button
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  width: 16px
+  height: 11px
+  padding: 0
+  border: none
+  background-color: #fff
+  cursor: pointer
+  &__line
+    width: 16px
+    height: 1px
+    background-color: $text-color
+.navbar__menu-button
+  display: none
