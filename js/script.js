@@ -1,4 +1,6 @@
 var hotelSlider = new Swiper(".swiper-container", {
+  // Swiper effect
+  effect: "coverflow",
   //Keyboard control
   keyboard: {
     enabled: true,
