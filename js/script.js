@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".newsletter").parallax({ imageSrc: "../img/newsletter-bg.jpeg" });
+  $(".newsletter").parallax({ imageSrc: "img/newsletter-bg.jpeg" });
 
   var hotelSlider = new Swiper(".hotel-slider", {
     // Swiper effect
