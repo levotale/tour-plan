@@ -40,5 +40,6 @@ $(document).ready(function () {
     document
       .querySelector(".navbar-bottom")
       .classList.toggle("navbar-bottom_visible");
+    console.log("Working!");
   });
 });

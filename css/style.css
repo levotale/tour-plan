@@ -464,6 +464,7 @@ img {
   border: none;
   background-color: #fff;
   cursor: pointer;
+  outline: none;
 }
 
 .menu-button__line {
