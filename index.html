@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="" class="logo">
@@ -22,7 +22,10 @@
               class="logo__img"
             />
           </a>
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search_mobile_hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -36,7 +39,7 @@
               />
             </button>
           </form>
-          <a href="" class="user navbar__user">
+          <a href="" class="user navbar__user navbar__user_mobile_hidden">
             <img
               src="img/user-avatar.jpeg"
               alt="Avatar: Nathan"
@@ -56,6 +59,35 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item_visible">
+              <a href="" class="user navbar__user navbar__user_mobile_visible">
+                <img
+                  src="img/user-avatar.jpeg"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item_visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search_mobile_visible"
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img
+                    src="img/search.svg"
+                    alt="Icon: search"
+                    class="search__img"
+                  />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
@@ -593,21 +625,23 @@
           <!-- /.footer__contact-form -->
         </div>
         <!-- /.footer-wrapper -->
-        <div class="footer-bottom__wrapper">
-          <ul class="footer-bottom__list">
-            <li class="footer-bottom__item">
-              <a href="#" class="footer-bottom__link">Disclaimer</a>
-            </li>
-            <li class="footer-bottom__item">
-              <a href="#" class="footer-bottom__link">Conditions of use</a>
-            </li>
-            <li class="footer-bottom__item">
-              <a href="#" class="footer-bottom__link">Cancellation policy</a>
-            </li>
-          </ul>
-          <img class="footer-bottom__pay" src="img/pay.png" alt="" />
+        <div class="footer-bottom">
+          <div class="footer-bottom__wrapper">
+            <ul class="footer-bottom__list">
+              <li class="footer-bottom__item">
+                <a href="#" class="footer-bottom__link">Disclaimer</a>
+              </li>
+              <li class="footer-bottom__item">
+                <a href="#" class="footer-bottom__link">Conditions of use</a>
+              </li>
+              <li class="footer-bottom__item">
+                <a href="#" class="footer-bottom__link">Cancellation policy</a>
+              </li>
+            </ul>
+            <img class="footer-bottom__pay" src="img/pay.png" alt="" />
+          </div>
+          <!-- /.footer-bottom__wrapper -->
         </div>
-        <!-- /.footer-bottom__wrapper -->
       </div>
       <!-- /.container -->
     </footer>
