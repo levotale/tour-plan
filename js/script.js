@@ -35,11 +35,42 @@ $(document).ready(function () {
     },
   });
 
-  var menuButton = document.querySelector(".menu-button");
-  menuButton.addEventListener("click", function () {
-    document
-      .querySelector(".navbar-bottom")
-      .classList.toggle("navbar-bottom_visible");
+  var menuButton = $(".menu-button");
+  menuButton.on("click", function () {
+    $(".navbar-bottom").toggleClass("navbar-bottom_visible");
     console.log("Working!");
   });
+
+  var modalButton = $("[data-toggle=modal-window]");
+  modalButton.on("click", openModal);
+
+  var closeModalButton = $("[data-toggle=close-button]");
+  closeModalButton.on("click", closeModal);
+  $(document).on("keyup", function (e) {
+    if (e.keyCode == 27) {
+      closeModalEscKey();
+    }
+  });
+
+  function openModal() {
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.addClass("modal__overlay_active");
+    modalDialog.addClass("modal__dialog_active");
+  }
+
+  function closeModal(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.removeClass("modal__overlay_active");
+    modalDialog.removeClass("modal__dialog_active");
+  }
+
+  function closeModalEscKey(event) {
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.removeClass("modal__overlay_active");
+    modalDialog.removeClass("modal__dialog_active");
+  }
 });
