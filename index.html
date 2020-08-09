@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:ital,wght@0,600;0,800;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -17,12 +18,16 @@
         <div class="navbar-top">
           <a href="" class="logo">
             <img
+              data-aos="fade-up"
+              data-aos-delay="100"
               src="img/logo-horizontal.svg"
               alt="Logo: Best Tour Plan"
               class="logo__img"
             />
           </a>
           <form
+            data-aos="fade-up"
+            data-aos-delay="200"
             action="#"
             class="search navbar__search navbar__search_mobile_hidden"
           >
@@ -39,7 +44,12 @@
               />
             </button>
           </form>
-          <a href="" class="user navbar__user navbar__user_mobile_hidden">
+          <a
+            href=""
+            class="user navbar__user navbar__user_mobile_hidden"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/user-avatar.jpeg"
               alt="Avatar: Nathan"
@@ -258,14 +268,19 @@
     <!-- /.hotel -->
     <section class="newsletter parallax-window">
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title">
+        <h2 class="newsletter-title" data-aos="fade-right" data-aos-delay="100">
           subscribe to our
           <span class="newsletter-title__strong">
             Newsletter
           </span>
         </h2>
         <!-- /.newsletter-title -->
-        <form action="#" class="subscribe newsletter__subscribe form">
+        <form
+          action="#"
+          class="subscribe newsletter__subscribe form"
+          data-aos="fade-left"
+          data-aos-delay="200"
+        >
           <input
             type="email"
             class="subscribe__input"
@@ -409,7 +424,11 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="img/activities-1.jpg"
               alt="The curious corner of chamarel"
@@ -419,7 +438,11 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/activities-2.jpg"
               alt="Gymkhana club golf course"
@@ -429,7 +452,11 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
               src="img/activities-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -439,7 +466,11 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
               src="img/activities-4.jpg"
               alt="The blue marine discovery quest"
@@ -710,6 +741,7 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/map.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
