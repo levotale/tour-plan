@@ -390,6 +390,12 @@ img {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
+}
+
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
 }
 
 .navbar {
@@ -883,6 +889,7 @@ img {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1193,6 +1200,10 @@ img {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   flex-basis: 48%;
 }
@@ -1304,16 +1315,17 @@ img {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
   min-height: 123px;
 }
 
 .modal__button {
+  margin-top: 15px;
   margin-right: 40px;
 }
 
@@ -1335,7 +1347,7 @@ img {
     width: 225px;
     height: 225px;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 100%;
   }
 }
@@ -1413,7 +1425,7 @@ img {
     grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 48%;
   }
   .footer__logo {
@@ -1599,7 +1611,7 @@ img {
   .card {
     height: 225px;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 100%;
   }
 }
